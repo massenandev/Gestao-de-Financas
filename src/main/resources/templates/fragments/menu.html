@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			  <div class="collapse navbar-collapse" id="navbarText">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" th:href="@{/dashboard}">
+			        	<span data-feather="home"></span>
+			       		 Dashboard<span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" th:href="@{/contatos}">
+			        <span data-feather="users"></span>
+			       		 Contatos</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" th:href="@{/contas}">
+			        <span data-feather="dollar-sign"></span>
+			        	Contas</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" th:href="@{/documentos}">
+			        <span data-feather="layers"></span>
+			        	Documentos</a>
+			      </li>
+			    </ul>
+			    <span class="navbar-text">
+			      Exibir nome do menu escolhido aqui
+			    </span>
+			  </div>
+			</nav>
+		</div>
+	</body>
+</html>
