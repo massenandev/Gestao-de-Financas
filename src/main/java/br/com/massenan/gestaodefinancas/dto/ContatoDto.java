@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.massenan.gestaodefinancas.domain.Contato;
+import br.com.massenan.gestaodefinancas.domain.EstadosEnum;
 
 public class ContatoDto {
 	
@@ -21,7 +22,6 @@ public class ContatoDto {
 		return lista;
 	}
 	
-//	pq o enum não entra nos parses?
 	public static Contato parse(ContatoDto contatoDto) {
 		Contato con = new Contato();
 		con.setNome(contatoDto.getNome());
@@ -29,6 +29,7 @@ public class ContatoDto {
 		con.setEmail(contatoDto.getEmail());
 		con.setCidade(contatoDto.getCidade());
 		con.setAtivo(contatoDto.isAtivo());
+		con.setEstado(EstadosEnum.valueOf(contatoDto.getEstado()));
 		return con;
 	}
 	
